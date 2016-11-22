@@ -1,0 +1,23 @@
+{
+  "name": "matchstick",
+  "version": "1.0.0",
+  "description": "A collection of APIs for different pattern searching approaches. Current implementations are the naive (simple) method, KMP pattern search method and the Rabin-Karp method.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "search",
+    "pattern",
+    "\"pattern",
+    "search\"",
+    "\"pattern",
+    "searching\"",
+    "kmp",
+    "rabin-karp",
+    "rabin",
+    "karp"
+  ],
+  "author": "Joy Ghosh joyghosh007@gmail.com",
+  "license": "MIT"
+}
