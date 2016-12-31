@@ -2,44 +2,44 @@
 * @author: Joy Ghosh
 * @date: November 22, 2016
 **/
-function search(data, pattern){
+exports.search = function(data, pattern){
 	var text = data.split("");
 	var pat = pattern.split("");
-
-	return naive(text, pattern);
+	var result = naive(text, pattern);
+	return (result.length==0)? -1: result;
 }
 
 /**
 * return index of first match.
 **/
-function searchFirst(data, pattern){
+exports.searchFirst = function(data, pattern){
 	var text = data.split("");
 	var patt = pattern.split("");
-
-	return naive(text, patt)[0];
+	var result = naive(text, pattern);
+	return (result.length==0)? -1: result[0];
 }
 
 /**
 * Naive or simple approach for pattern searching.
 **/
 function naive(data, pattern){
-		int M = data.length;
-		int N = pattern.length;
-		var indices = [];
+	var M = data.length;
+	var N = pattern.length;
+	var indices = [];
 
-		/* slide pattern one by one*/
-		for (var i = 0; i <= M-N; i++) {
-			var j;
-			for (j = 0; j < N; j++) {
-				if(data[i+j]!=pattern[j])
-					break;
-			}
-
-			if(j==N){
-				indices.push(i);
-			}
+	/* slide pattern one by one*/
+	for (var i = 0; i <= M-N; i++) {
+		var j;
+		for (j = 0; j < N; j++) {
+			if(data[i+j]!=pattern[j])
+				break;
 		}
-		return indices;
+
+		if(j==N){
+			indices.push(i);
+		}
+	}
+	return indices;
 }
 
 /**
