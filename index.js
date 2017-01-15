@@ -7,7 +7,7 @@
 var matcher = require("./methods");
 
 function Matchstick(method){
-		this.method = method;
+	this.method = method;
 }
 
 //find all.

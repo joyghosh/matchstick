@@ -10,7 +10,6 @@ var Algorithm = { NAIVE : "naive",
 };
 
 var CONSTANTS = { D: 256, Q: 101};
-// exports.Algorithm = algorithms;
 
 //search the entire text for matching patterns.
 exports.search = function(data, pattern, algorithm){
