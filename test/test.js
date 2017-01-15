@@ -22,7 +22,7 @@ describe("pattern matcher", function(){
 
 		it('should return -1 upon no match.', function(){
 			assert.equal(-1, matcher.search(text[0], pattern[1], "naive"));
-		}); 
+		});
 	});
 
 	describe("KMP pattern matching", function(){
@@ -40,6 +40,16 @@ describe("pattern matcher", function(){
 	});
 
 	describe("Rabin Karp pattern matching", function(){
+		it('should return [10] upon successful match.', function(){
+			assert.deepEqual([10], matcher.search(text[0], pattern[0], "rabinkarp"));
+		});
 
+		it('should return [0,9,12] upon successful match.', function(){
+			assert.deepEqual([0,9,12], matcher.search(text[1], pattern[1], "rabinkarp"));
+		});
+
+		it('should return -1 upon no match.', function(){
+			assert.equal(-1, matcher.search(text[0], pattern[1], "rabinkarp"));
+		});
 	});
 });
