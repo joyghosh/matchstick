@@ -1,11 +1,11 @@
 {
   "name": "@joyghosh/matchstick",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A collection of APIs for common pattern searching algorithms. Supported implementations are naive (simple), KMP pattern search and Rabin-Karp method.",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url" : "https://github.com/joyghosh/matchstick.git"
+    "url": "https://github.com/joyghosh/matchstick.git"
   },
   "scripts": {
     "test": "mocha"
@@ -25,12 +25,12 @@
   "license": "MIT",
   "bugs": {
     "mail": "joyghosh007@gmail.com",
-    "url" : "https://github.com/joyghosh/matchstick/issues"
+    "url": "https://github.com/joyghosh/matchstick/issues"
   },
   "contributors": [
-     {
-       "name" : "Joy Ghosh",
-       "email": "joyghosh007@gmail.com"
-     }
+    {
+      "name": "Joy Ghosh",
+      "email": "joyghosh007@gmail.com"
+    }
   ]
 }
