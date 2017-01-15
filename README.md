@@ -1,5 +1,5 @@
 # matchstick
-API collection for common or important pattern  searching algorithms. Following is the list of supported methods.
+API collection for common pattern  searching algorithms. Following is the list of supported methods.
 - Naive or simple pattern search.
 - KMP (Knuth Morris Pratt) method.
 - Rabin-Karp algorithm.
