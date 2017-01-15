@@ -40,14 +40,21 @@ exports.search = function(data, pattern, algorithm){
 }
 
 /**
-* return index of first match.
+* return index of the first match.
 **/
-exports.searchFirst = function(data, pattern){
-	var text = data.split("");
-	var patt = pattern.split("");
-	var result = naive(text, pattern);
-	return (result.length==0)? -1: result[0];
+exports.searchFirst = function(data, pattern, algorithm){
+	var result = exports.search(data, pattern, algorithm);
+	return (result == -1)? -1: result[0];
 }
+
+/**
+* return index of the last match.
+**/
+exports.searchLast = function(data, pattern, algorithm){
+	var result = exports.search(data, pattern, algorithm);
+	return (result == -1)? -1: result.pop();
+}
+
 
 /**
 * Naive or simple approach for pattern searching.
