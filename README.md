@@ -15,40 +15,40 @@ $ npm i @joyghosh/matchstick
 ```sh
 var Matchstick = require('matchstick');
 
-//Naive pattern searching.
+# Naive pattern searching.
 var naive = new Matchstick("naive");
 
-//Find all matches.
+# Find all matches.
 console.log(naive.findAll("This is a test text.", "test"));	# [10]
 console.log(naive.findAll("AABAACAADAABAABA", "AABA"));		# [0,9,12]
 console.log(naive.findAll("AABAACAADAABAABA", "test"));		# -1 (Returns -1 upon no match.)
 
-//Find first match.
+# Find first match.
 console.log(naive.findFirst("This is a test text.", "test")); # 10
 console.log(naive.findFirst("AABAACAADAABAABA", "AABA"));	  # 0
 console.log(naive.findFirst("AABAACAADAABAABA", "test"));	  # -1
 
-//Find last match.
+# Find last match.
 console.log(naive.findLast("This is a test text.", "test"));  # 10
 console.log(naive.findLast("AABAACAADAABAABA", "AABA"));	  # 12
 console.log(naive.findLast("AABAACAADAABAABA", "test"));	  # -1
 
-//For KMP pattern searching.
+# For KMP pattern searching.
 var kmp = new Matchstick("kmp");
 
-//Find all matches.
+# Find all matches.
 console.log(kmp.findAll("This is a test text.", "test"));	# [10]
 console.log(kmp.findAll("AABAACAADAABAABA", "AABA"))		# [0,9,12]
 console.log(kmp.findAll("AABAACAADAABAABA", "test"));		# -1
 
 ...
 
-//For Rabin Karp pattern searching.
+# For Rabin Karp pattern searching.
 var rabinkarp = new Matchstick("rabinkarp");
 
 ...
 
-//Find last match.
+# Find last match.
 console.log(rabinkarp.findLast("This is a test text.", "test")); # 10
 console.log(rabinkarp.findLast("AABAACAADAABAABA", "AABA"));	 # 12
 console.log(rabinkarp.findLast("AABAACAADAABAABA", "test"));	 # -1
