@@ -1,6 +1,6 @@
 {
   "name": "@joyghosh/matchstick",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A collection of APIs for common pattern searching algorithms. Supported implementations are naive (simple), KMP pattern search and Rabin-Karp method.",
   "main": "index.js",
   "repository": {
