@@ -60,6 +60,13 @@ console.log(rabinkarp.findLast("AABAACAADAABAABA", "test"));	 # -1
 * [Knuth Morris Pratt wiki](https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm)
 * [Rabin-Karp wiki](https://en.wikipedia.org/wiki/Rabin%E2%80%93Karp_algorithm)
 
+
+### Donate 
+
+I would be highly appreciate if you become my patron by simply clicking on this button
+
+[![](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/joyghosh)
+
 ### License
 
 The MIT License (MIT)
